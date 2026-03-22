@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rahul Portfolio — React + Node.js + MongoDB
 
 A full-stack developer portfolio with a dedicated Home page, 6 themes, custom cursor trail, particle canvas background, and a MongoDB-powered contact form.
@@ -95,3 +96,7 @@ Then serve the `client/build` folder with your Node server or a static host like
 | GET    | /api/health   | Server health check   |
 | POST   | /api/contact  | Save contact message  |
 | GET    | /api/contact  | List all messages     |
+=======
+# portfolio
+Designed and developed a responsive personal portfolio website to showcase projects, technical skills, and contact information using React.js, Node.js.
+>>>>>>> f5ba042c6db75eb72f9a5513b47b07e9fd5d2614

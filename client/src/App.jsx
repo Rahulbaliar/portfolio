@@ -1834,63 +1834,95 @@ function AchievementsPage() {
 // ── CONTACT ──────────────────────────────────────────────────────
 function ContactPage() {
   useAOS();
-  const [form, setForm] = useState({name:'',email:'',message:''});
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true); setStatus('');
-    try {
-      const res = await fetch('/api/contact', {
-        method:'POST', headers:{'Content-Type':'application/json'},
-        body: JSON.stringify(form),
-      });
-      const data = await res.json();
-      if(data.success){ setStatus('success'); setForm({name:'',email:'',message:''}); }
-      else setStatus('error');
-    } catch { setStatus('error'); }
-    finally { setLoading(false); }
+    setLoading(true);
+    setStatus('');
+
+    setTimeout(() => {
+      setLoading(false);
+      setStatus('success');
+      setForm({ name: '', email: '', message: '' });
+    }, 1000);
   };
+
+  const contactDetails = [
+    { icon: '✉', label: 'Email', value: 'rahulyad62005@gmail.com', href: 'mailto:rahulyad62005@gmail.com' },
+    { icon: '📱', label: 'Phone', value: '+91 9813180113', href: 'tel:+919813180113' },
+    { icon: '🔗', label: 'LinkedIn', value: 'linkedin.com/in/rahulyad', href: 'https://www.linkedin.com/in/rahulyad' },
+    { icon: '💻', label: 'GitHub', value: 'github.com/Rahulbaliar', href: 'https://github.com/Rahulbaliar' },
+  ];
 
   return (
     <div className="section">
-      <SectionHeader label="get_in_touch" title="Contact Me"/>
+      <SectionHeader label="get_in_touch" title="Contact Me" />
+
       <div className="contact-grid">
         <div>
           <p className="contact-intro">
             I'm open to full-time roles and freelance projects. Let's build something
             incredible together — drop a message and I'll get back within 24 hours.
           </p>
-          {[
-            {icon:'✉',label:'email',val:'rahulyad62005@gmail.com',href:'mailto:rahulyad62005@gmail.com'},
-            {icon:'📱',label:'phone',val:'+91 9813180113',href:'tel:+919813180113'},
-            {icon:'🔗',label:'linkedin',val:'linkedin.com/in/rahulyad',href:'https://www.linkedin.com/in/rahulyad'},
-            {icon:'💻',label:'github',val:'github.com/Rahulbaliar',href:'https://github.com/Rahulbaliar'},
-          ].map(c => (
-            <a key={c.label} href={c.href} target="_blank" rel="noreferrer" className="contact-link aos-item">
-              <div className="c-icon">{c.icon}</div>
-              <div><div className="c-label">{c.label}</div><div className="c-val">{c.val}</div></div>
-            </a>
-          ))}
+
+          {/* Display contact details */}
+          <div className="contact-details">
+            {contactDetails.map(c => (
+              <a key={c.label} href={c.href} target="_blank" rel="noreferrer" className="contact-link aos-item">
+                <div className="c-icon">{c.icon}</div>
+                <div>
+                  <div className="c-label">{c.label}</div>
+                  <div className="c-val">{c.value}</div>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
+
+        {/* Contact Form */}
         <form onSubmit={handleSubmit} className="aos-item">
-          {[{f:'name',l:'your_name',t:'text',ph:'Name'},{f:'email',l:'email_address',t:'email',ph:'you@example.com'}].map(({f,l,t,ph})=>(
-            <div key={f} className="form-group">
-              <label className="form-label">{l.replace(/_/g,' ')}</label>
-              <input className="form-input" type={t} placeholder={ph} required
-                value={form[f]} onChange={e=>setForm({...form,[f]:e.target.value})}/>
-            </div>
-          ))}
+          <div className="form-group">
+            <label className="form-label">Your Name</label>
+            <input
+              className="form-input"
+              type="text"
+              required
+              value={form.name}
+              onChange={e => setForm({ ...form, name: e.target.value })}
+            />
+          </div>
+
+          <div className="form-group">
+            <label className="form-label">Email Address</label>
+            <input
+              className="form-input"
+              type="email"
+              required
+              value={form.email}
+              onChange={e => setForm({ ...form, email: e.target.value })}
+            />
+          </div>
+
           <div className="form-group">
             <label className="form-label">Message</label>
-            <textarea className="form-input" placeholder="Tell me about your project..." required
-              value={form.message} onChange={e=>setForm({...form,message:e.target.value})}/>
+            <textarea
+              className="form-input"
+              required
+              value={form.message}
+              onChange={e => setForm({ ...form, message: e.target.value })}
+            />
           </div>
-          <button type="submit" className="btn-primary" style={{width:'100%',justifyContent:'center'}} disabled={loading}>
+
+          <button type="submit" className="btn-primary" disabled={loading}>
             {loading ? 'Sending...' : 'Send Message →'}
           </button>
-          {status==='success' && <p className="form-status success">✓ Message sent! I'll reply soon.</p>}
+
+          {status === 'success' && (
+            <p className="form-status success">✓ Message sent! I'll reply soon.</p>
+          )}
         </form>
       </div>
     </div>

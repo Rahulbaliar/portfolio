@@ -1699,7 +1699,7 @@ function ResumePage() {
         </div>
       </div>
       <div style={{textAlign:'center',marginTop:36}}>
-        <a href="https://drive.google.com/file/d/1XvTAkTScw7ByHMWhk5kghAicmishz9aV/view?usp=drivesdk" className="btn-primary">Download Full Resume ↓</a>
+        <a href="https://drive.google.com/file/d/1WJuaboujT9fDiDJQaeeEEVbull6LErtr/view?usp=drivesdk" className="btn-primary">Download Full Resume ↓</a>
       </div>
     </div>
   );
@@ -1967,7 +1967,7 @@ export default function App() {
           <a href="https://github.com/Rahulbaliar" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/rahulyad" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="mailto:rahulyad62005@gmail.com">Email</a>
-          <a href="https://drive.google.com/file/d/1XvTAkTScw7ByHMWhk5kghAicmishz9aV/view?usp=drivesdk" target="_blank" rel="noreferrer">Resume</a>
+          <a href="https://drive.google.com/file/d/1WJuaboujT9fDiDJQaeeEEVbull6LErtr/view?usp=drivesdk" target="_blank" rel="noreferrer">Resume</a>
         </div>
       </footer>
     </>

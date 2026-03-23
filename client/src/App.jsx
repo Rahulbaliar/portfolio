@@ -1597,8 +1597,7 @@ function HomePage({ setPage }) {
             <button type="submit" className="btn-primary" style={{width:'100%',justifyContent:'center'}} disabled={loading}>
               {loading ? 'Sending...' : 'Send Message →'}
             </button>
-            {status==='success' && <p className="form-status success">✓ Message sent! I'll reply soon.</p>}
-            {status==='error'   && <p className="form-status error">✗ Something went wrong. Try emailing directly.</p>}
+            {status==='success'   && <p className="form-status success">✓ Message sent! I'll reply soon.</p>}
           </form>
         </div>
       </div>
@@ -1892,7 +1891,6 @@ function ContactPage() {
             {loading ? 'Sending...' : 'Send Message →'}
           </button>
           {status==='success' && <p className="form-status success">✓ Message sent! I'll reply soon.</p>}
-          {status==='error'   && <p className="form-status error">✗ Something went wrong. Try emailing directly.</p>}
         </form>
       </div>
     </div>

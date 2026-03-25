@@ -1379,7 +1379,7 @@ function HomePage({ setPage }) {
               <a href="https://www.linkedin.com/in/rahulyad" className="btn-ghost" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
             <div className="hero-stats aos-item">
-              {[['3+','Projects'],['4','Certifications'],['7.9','CGPA'],['1%','NPTEL Rank']].map(([n,l],i,arr)=>(
+              {[['3+','Projects'],['8+','Certifications'],['7.9','CGPA'],['1%','NPTEL Rank']].map(([n,l],i,arr)=>(
                 <div key={l} style={{display:'flex',alignItems:'center',gap:24}}>
                   <div className="stat-block"><div className="stat-number">{n}</div><div className="stat-label">{l}</div></div>
                   {i<arr.length-1 && <div className="stat-sep"/>}
@@ -1650,7 +1650,7 @@ function AboutPage() {
             <a href="https://www.linkedin.com/in/rahulyad" className="btn-ghost" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
           <div className="hero-stats aos-item">
-            {[['3+','Projects'],['4','Certs'],['7.9','CGPA'],['1%','NPTEL']].map(([n,l],i,arr)=>(
+            {[['3+','Projects'],['8+','Certs'],['7.9','CGPA'],['1%','NPTEL']].map(([n,l],i,arr)=>(
               <div key={l} style={{display:'flex',alignItems:'center',gap:24}}>
                 <div className="stat-block"><div className="stat-number">{n}</div><div className="stat-label">{l}</div></div>
                 {i<arr.length-1 && <div className="stat-sep"/>}

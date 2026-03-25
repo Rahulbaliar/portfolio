@@ -27,7 +27,7 @@ const PROJECTS = [
     stack:['React.js','Node.js','MongoDB'],
     period:"Sep '25 – Dec '25",
     color:'#00f5d4',
-    github:'https://github.com/chandrpaljadon1124',
+    github:'https://github.com/rahulbaliar/langleo',
     live:'https://langleo.netlify.app/',
     desc:'AI-powered language translation chatbot using Mistral AI API for real-time multilingual text conversion and robust Axios-based backend.',
     highlights:['Mistral AI API integration','Real-time multilingual translation','Modular scalable architecture'],
@@ -38,7 +38,7 @@ const PROJECTS = [
     stack:['HTML','CSS','JavaScript','MySQL','PHP'],
     period:"Apr '24 – Jun '24",
     color:'#f72585',
-    github:'https://github.com/chandrpaljadon1124',
+    github:'https://github.com/rahulbaliar/artfolio',
     live:'https://shimmer-portfolio-hub.vercel.app/',
     desc:'Responsive portfolio website with dynamic galleries, contact forms, and MySQL database integration for efficient content management.',
     highlights:['Responsive UI/UX design','MySQL database integration','Cross-device compatibility'],
@@ -49,7 +49,7 @@ const PROJECTS = [
     stack:['Python','Streamlit'],
     period:"Sep '24 – Nov '24",
     color:'#7209b7',
-    github:'https://github.com/chandrpaljadon1124',
+    github:'https://github.com/Rahulbaliar/page-replacement-algo-simulator',
     live:'https://efficientpagereplacementsimulator-qeuthgtveexeuco2xryqk2.streamlit.app/',
     desc:'Interactive simulation of FIFO, LRU, and Optimal page replacement algorithms with live Streamlit charts and configurable parameters.',
     highlights:['FIFO, LRU & Optimal algorithms','Interactive Streamlit charts','Configurable frame sizes'],
@@ -57,7 +57,7 @@ const PROJECTS = [
   },
 ];
 const CERTS = [
-  {name:'C++ Programming: Mastering Data Structures & Algorithms', issuer:'LPU', date:"Jul' 25", link:'https://drive.google.com/file/d/1A8wWmBx5kDIxXf7_wDxzyp9nDzXqgYck/view'},
+  {name:'C++ Programming: Mastering Data Structures & Algorithms', issuer:'LPU', date:"Jul' 25", link:'https://drive.google.com/file/d/1WJuaboujT9fDiDJQaeeEEVbull6LErtr/view?usp=drivesdk'},
   {name:'Java Programming',                   issuer:'Iamneo',   date:"May '25", link:'https://lpucolab438.examly.io/certificate/U2FsdGVkX19Uzv1lOuh0JkST0wnOYkc2%2BCe9pQPfh9E%3D'},
   {name:'Cloud Computing',                    issuer:'NPTEL',    date:"Mar '25", link:'https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL25CS11S153730229004247102'},
   {name:'Object Oriented Programming',        issuer:'Iamneo',   date:"Dec '24", link:'https://lpucolab438.examly.io/certificate/U2FsdGVkX1%2FKXbj7sauxubpo0DG8Vv%2Fz3G84s0w618Q%3D'},
@@ -1289,7 +1289,7 @@ function Navbar({ page, setPage }) {
           onKeyDown={(e) => { if (e.key === 'Enter') setPage('home'); }}
           style={{ cursor: 'pointer' }}
         >
-          <span className="logo-r">C</span><span className="logo-rest">HANDU</span><span className="logo-dot">.</span>
+          <span className="logo-r">R</span><span className="logo-rest">AHUL</span><span className="logo-dot">.</span>
         </div>
         <div className="nav-links">
           {PAGES.map((p,i) => (
@@ -1374,9 +1374,9 @@ function HomePage({ setPage }) {
               digital experiences — from AI chatbots to OS simulators.
             </p>
             <div className="hero-cta aos-item">
-              <a href="mailto:chandrapalthakur287@gmail.com" className="btn-primary">Hire Me →</a>
-              <a href="https://github.com/chandrpaljadon1124" className="btn-ghost" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com/in/chandrapal-thakur12" className="btn-ghost" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="mailto:rahulyad62005@gmail.com" className="btn-primary">Hire Me →</a>
+              <a href="https://github.com/rahulbaliar" className="btn-ghost" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/rahulyad" className="btn-ghost" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
             <div className="hero-stats aos-item">
               {[['3+','Projects'],['4','Certifications'],['7.9','CGPA'],['1%','NPTEL Rank']].map(([n,l],i,arr)=>(
@@ -1570,10 +1570,10 @@ function HomePage({ setPage }) {
               incredible together — drop a message and I'll get back within 24 hours.
             </p>
             {[
-              {icon:'✉',label:'email',val:'chandrapalthakur287@gmail.com',href:'mailto:chandrapalthakur287@gmail.com'},
+              {icon:'✉',label:'email',val:'rahulyad62005@gmail.com',href:'mailto:rahulyad62005@gmail.com'},
               {icon:'📱',label:'phone',val:'+91 9813180113',href:'tel:+919813180113'},
-              {icon:'🔗',label:'linkedin',val:'linkedin.com/in/chandrapal-thakur12',href:'https://www.linkedin.com/in/chandrapal-thakur12'},
-              {icon:'💻',label:'github',val:'github.com/chandrpaljadon1124',href:'https://github.com/chandrpaljadon1124'},
+              {icon:'🔗',label:'linkedin',val:'linkedin.com/in/rahulyad',href:'https://www.linkedin.com/in/rahulyad'},
+              {icon:'💻',label:'github',val:'github.com/rahulbaliar',href:'https://github.com/rahulbaliar'},
             ].map(c => (
               <a key={c.label} href={c.href} target="_blank" rel="noreferrer" className="contact-link aos-item">
                 <div className="c-icon">{c.icon}</div>
@@ -1616,7 +1616,7 @@ function AboutPage() {
         <div>
           <div className="avail-badge aos-item"><span className="avail-dot"/><span className="label-tag">Available for work</span></div>
           <h1 className="display-xl aos-item" style={{marginTop:4}}>
-            Hi, I'm<br/><span className="grad-text">Chandrapal Singh</span>
+            Hi, I'm<br/><span className="grad-text">Rahul</span>
           </h1>
           <div className="typed-wrap aos-item">
             <span className="typed-prefix">{'>'}_</span>
@@ -1645,9 +1645,9 @@ function AboutPage() {
             </div>
           </div>
           <div className="hero-cta aos-item">
-            <a href="mailto:chandrapalthakur287@gmail.com" className="btn-primary">Hire Me →</a>
-            <a href="https://github.com/chandrapaljadon1124" className="btn-ghost" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/chandrapal-thakur12" className="btn-ghost" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="mailto:rahulyad62005@gmail.com" className="btn-primary">Hire Me →</a>
+            <a href="https://github.com/rahulbaliar" className="btn-ghost" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/rahulyad" className="btn-ghost" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
           <div className="hero-stats aos-item">
             {[['3+','Projects'],['4','Certs'],['7.9','CGPA'],['1%','NPTEL']].map(([n,l],i,arr)=>(
@@ -1698,7 +1698,7 @@ function ResumePage() {
         </div>
       </div>
       <div style={{textAlign:'center',marginTop:36}}>
-        <a href="https://drive.google.com/file/d/1fFUfTimKsahdhd48QENC0pdd8PSop-aN/view?usp=drivesdk" className="btn-primary">Download Full Resume ↓</a>
+        <a href="https://drive.google.com/file/d/1WJuaboujT9fDiDJQaeeEEVbull6LErtr/view?usp=drivesdk" className="btn-primary">Download Full Resume ↓</a>
       </div>
     </div>
   );
@@ -1851,10 +1851,10 @@ function ContactPage() {
   };
 
   const contactDetails = [
-    { icon: '✉', label: 'Email', value: 'chandrapalthakur287@gmail.com', href: 'mailto:chandrapalthakur287@gmail.com' },
+    { icon: '✉', label: 'Email', value: 'rahulyad62005@gmail.com', href: 'mailto:rahulyad62005@gmail.com' },
     { icon: '📱', label: 'Phone', value: '+91 9813180113', href: 'tel:+919813180113' },
-    { icon: '🔗', label: 'LinkedIn', value: 'linkedin.com/in/chandrapal-thakur12', href: 'https://www.linkedin.com/in/chandrapal-thakur12' },
-    { icon: '💻', label: 'GitHub', value: 'github.com/chandrpaljadon1124', href: 'https://github.com/chandrpaljadon1124' },
+    { icon: '🔗', label: 'LinkedIn', value: 'linkedin.com/in/rahulyad', href: 'https://www.linkedin.com/in/rahulyad' },
+    { icon: '💻', label: 'GitHub', value: 'github.com/rahulbaliar', href: 'https://github.com/rahulbaliar' },
   ];
 
   return (
@@ -1992,12 +1992,12 @@ export default function App() {
       </div>
 
       <footer>
-        <div className="footer-brand">© 2025 Chandrapal Singh | Full Stack Developer | Passionate about creating innovative web solutions</div>
+        <div className="footer-brand">© 2025 Rahul Yadav | Full Stack Developer | Passionate about creating innovative web solutions</div>
         <div className="footer-links">
-          <a href="https://github.com/chandrpaljadon1124" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/chandrapal-thakur12" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="mailto:chandrapalthakur287@gmail.com">Email</a>
-          <a href="https://drive.google.com/file/d/1fFUfTimKsahdhd48QENC0pdd8PSop-aN/view?usp=drivesdk" target="_blank" rel="noreferrer">Resume</a>
+          <a href="https://github.com/rahulbaliar" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/rahulyad" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:rahulyad62005@gmail.com">Email</a>
+          <a href="https://drive.google.com/file/d/1WJuaboujT9fDiDJQaeeEEVbull6LErtr/view?usp=drivesdk" target="_blank" rel="noreferrer">Resume</a>
         </div>
       </footer>
     </>
